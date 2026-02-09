@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  background-color: $color-primary;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 0%;
+  right: 0%;
+  //margin-top: 10rem;
+  height: 20vh;
+}
+
+.scroolup {
+  position: fixed;
+  bottom: 0%;
+  right: 2%;
+
+  // background-color: red;
+  font-size: 3rem;
+  animation: heart 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+
+  &__hidee {
+    visibility: visible;
+    z-index: 100;
+  }
+  & > a:link,
+  & > a:visited {
+    text-decoration: none;
+    color: rgba($color: $color-secondary, $alpha: 0.3);
+  }
+}

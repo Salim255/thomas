@@ -1,0 +1,38 @@
+.welcome{
+    height: 100vh;
+    text-align: center;
+    
+    text-transform: uppercase;
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, .5)), url(../img/hero1.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all .2s ease-in-out;
+   &__header{
+     position: absolute;
+     top: 45%;
+     left: 40%;
+     transform: translate(50%, 0%);
+    
+     background-attachment: fixed;
+    
+
+   }
+     
+    &__lille{
+      letter-spacing: 5px;
+      border-bottom:  5px solid rgb(181, 181, 181);
+      display: inline-block;
+      font-size: 3rem;
+     
+    }
+    &__title{
+      color:  rgb(237, 230, 230);
+      letter-spacing: 5px;
+      display: block;
+     
+     
+    }
+  }
+  
+  
+  

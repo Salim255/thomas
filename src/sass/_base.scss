@@ -1,0 +1,67 @@
+// COLOR VARIABLES
+$color-primary: #000000;
+$color-primary-dark: #B28451;
+
+$color-secondary: #ffffff;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+$color-tertiary: rgb(80, 8, 8);
+$color-tertiary-1: rgb(130, 8, 8);
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+//RESPONSIVE BREAKPOINT
+$bp-largest: 75em; //1200 px/16 = 75em, 16px default font size for the browser 1em = 16px
+$bp-large: 62.5em;//1000 /16 = 62.5em
+$bp-medium: 50em;//800/16 = 50em
+$bp-small: 37.5em ;// 600/16
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 10/16px  == 62.5% -> 1rem = 10px
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $font-primary;
+    color: $color-grey-light-1;
+    font-weight: 300;
+    line-height: 1.6;
+   // overflow: hidden;
+   //background-color: $color-primary;
+   background-image: linear-gradient( to right bottom,  $color-primary ,  rgba($color: rgb(0, 0, 0), $alpha: .9 )) ;
+    
+}
+
+
+
+.section{
+  min-height: 60vh;
+    text-align: center;
+    //background-color: #000000;
+   // padding-top: 20rem;
+    //color: #000000;
+}
+
+.im{
+    position: relative;
+    top: 50%;
+    left: 20%;
+   
+}

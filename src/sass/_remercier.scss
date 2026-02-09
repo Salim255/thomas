@@ -1,0 +1,43 @@
+.remer{
+    background-color: $color-secondary;
+    //height: 100vh;
+    display: grid;
+    grid-template-columns: 20vw  1fr 20vw;
+    //grid-template-rows:repeat(2, 1fr);
+    
+    grid-auto-rows: max-content;
+    color: $color-grey-dark-1;
+
+    &__gridImg{
+        padding-top: 10rem;
+        grid-column: 2/3;
+    }
+    &__gridP{
+        grid-column:2/3 ;
+    }
+    &__img{
+        width: 100%;
+        background-size: cover;
+    }
+
+    &__text{
+        font-size: 2.2rem;
+        //font-weight: 700;
+        line-height: 2;
+        border-bottom: 1.5px solid $color-grey-dark-2;
+        margin-bottom: 2rem;
+    }
+}
+
+.createdBy{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__p{
+        font-size: 1.8rem;
+        line-height: 2;
+    }
+    &__btn{
+        display: block;
+    }
+}
