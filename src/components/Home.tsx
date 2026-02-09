@@ -1,11 +1,7 @@
-import React,{useEffect} from 'react';
-import {Header} from './Header';
 import Landing from './Landing';
-import Footer  from './Footer';
-import Test from './Test';
 import { Outlet } from 'react-router-dom';
 import About from './About';
-import Conect from './Conect';
+import Connect from './Connect';
 
 const Home = () => {
   
@@ -14,7 +10,7 @@ const Home = () => {
     <>
         <Landing/>
         <About />
-        <Conect/>
+        <Connect/>
         <Outlet/>
     </>
   )

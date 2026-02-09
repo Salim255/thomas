@@ -1,8 +1,4 @@
-import React from "react";
 import hero from "../img/image00026.jpg";
-import hero_10 from "../img/image00010.jpg";
-import hero_11 from "../img/image00011.jpg";
-import hero_12 from "../img/image00012.jpg";
 
 const About = () => {
   return (

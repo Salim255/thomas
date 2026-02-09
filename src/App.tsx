@@ -1,33 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Routes} from "react-router-dom";
+import SharedLayout from "./components/SharedLayout";
+import Home from "./components/Home";
+import Error from "./components/Error";
+import Dashboard from "./components/Dashboard";
+import About from "./components/About";
+import Connect from "./components/Connect"
+import Gallery from "./components/Gallery";
+import SharedGalleryLayout from "./components/SharedGalleryLayout";
+import SingleImage from "./components/SingleImage";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Login from "./components/Login";
+
+import "./App.scss";
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [user, setUser] = useState(null);
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
+            <Route path="connect" element={<Connect />} />
+            <Route path="about" element={<About />} />
+
+            <Route element={<SharedGalleryLayout />}>
+              <Route path="gallery" element={<Gallery />} />
+              <Route path=":imageId" element={<SingleImage />} />
+            </Route>
+
+            <Route path="login" element={<Login setUser={setUser} />} />
+
+            <Route
+              path="dashboard"
+              element={
+                <ProtectedRoute user={user}>
+                  <Dashboard user={user} />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

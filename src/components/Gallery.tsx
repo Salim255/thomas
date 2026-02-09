@@ -15,7 +15,7 @@ import hero_12 from '../img/image00012.jpg'
 import About from './About';
 import Welcome from './Welcome';
 import {images} from './datas';
-import Test from './Test';
+
 
 
 const Gallery = () => {
@@ -31,7 +31,7 @@ const Gallery = () => {
 )); */
   return (
     <section className='section gallery'> 
-          <Test/>
+     
           <h2>Gallery</h2>
            <div className='gallery__space'>
       

@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect, useRef, useState} from 'react';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../img/thom.png';
 

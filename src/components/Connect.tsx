@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Conect = () => {
+const Connect = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [location, setLocation] = useState("");
@@ -66,4 +66,4 @@ const Conect = () => {
   );
 };
 
-export default Conect;
+export default Connect;
