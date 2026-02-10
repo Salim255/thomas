@@ -5,6 +5,7 @@ import App from './App.tsx'
 
 const root = document.getElementById('root');
 createRoot(root!).render(
+  // StrictMod enables extra development-only checks that help you find bugs early.
   <StrictMode>
     <App />
   </StrictMode>,

@@ -1,6 +1,6 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../img/thom.png";
+import logo from "/img/thom.png";
 
 export const StyleNavabr = () => {
   return (

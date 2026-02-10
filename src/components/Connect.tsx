@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Connect = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [location, setLocation] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleChange = () => {};
-
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: Event) => {
     e.preventDefault();
     console.log("click");
   };

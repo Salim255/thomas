@@ -25,8 +25,8 @@ function App() {
             <Route path="connect" element={<Connect />} />
             <Route path="about" element={<About />} />
 
-            <Route element={<SharedGalleryLayout />}>
-              <Route path="gallery" element={<Gallery />} />
+            <Route path="gallery" element={<SharedGalleryLayout />}>
+              <Route index element={<Gallery />} />
               <Route path=":imageId" element={<SingleImage />} />
             </Route>
 

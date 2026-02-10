@@ -4,14 +4,12 @@ import About from './About';
 import Connect from './Connect';
 
 const Home = () => {
-  
-
   return (
     <>
-        <Landing/>
-        <About />
-        <Connect/>
-        <Outlet/>
+      <Landing/>
+      <About />
+      <Connect/>
+      <Outlet/>
     </>
   )
 }

@@ -1,5 +1,4 @@
-import React from 'react';
-import image from '../img/image00018.jpg'
+import image from '/img/image00018.jpg'
 
 const Remerciements = () => {
   return (

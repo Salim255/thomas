@@ -1,6 +1,4 @@
-import React,{useRef,useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckSquare, faCoffee } from '@fortawesome/fontawesome-free-solid';
+import {useRef,useEffect } from 'react';
 import { ImShift} from "react-icons/im";
 
 
