@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { images } from './data';
+import { images } from '../../../shared/data/data';
 
 const SingleImage = () => {
     const {imageId} = useParams();

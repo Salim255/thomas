@@ -1,15 +1,15 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom";
-import SharedLayout from "./components/SharedLayout";
-import Home from "./components/Home";
-import Error from "./components/Error";
-import Dashboard from "./components/Dashboard";
-import About from "./components/About";
-import Connect from "./components/Connect"
-import Gallery from "./components/Gallery";
-import SharedGalleryLayout from "./components/SharedGalleryLayout";
-import SingleImage from "./components/SingleImage";
-import ProtectedRoute from "./components/ProtectedRoute";
-import Login from "./components/Login";
+import SharedLayout from "./shared/components/SharedLayout";
+import Home from "./features/home/Home";
+import Error from "./shared/components/error/Error";
+import Dashboard from "./features/dashboard/Dashboard";
+import About from "./features/about/About";
+import Connect from "./features/contact/Contact"
+import Gallery from "./features/gallery/Gallery";
+import SharedGalleryLayout from "./features/gallery/components/SharedGalleryLayout";
+import SingleImage from "./features/gallery/components/SingleImage";
+import ProtectedRoute from "./shared/components/ProtectedRoute";
+import Login from "./features/auth/Login";
 
 import "./App.scss";
 import { useState } from "react";

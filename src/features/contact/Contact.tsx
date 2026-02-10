@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Connect = () => {
+const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -63,4 +63,4 @@ const Connect = () => {
   );
 };
 
-export default Connect;
+export default Contact;

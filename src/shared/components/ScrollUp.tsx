@@ -25,7 +25,7 @@ const ScrollUp = () => {
     })
   }, []);
   return (
-    <div className='scroolup ' ref={refUp} >
+    <div className='scroolup' ref={refUp} >
         <a href='#welcome'><ImShift/></a>
   
       </div>

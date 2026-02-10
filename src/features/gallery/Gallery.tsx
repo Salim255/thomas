@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import { images }from './data';
+import { images } from '../../shared/data/data';
 
 const Gallery = () => {
   return (

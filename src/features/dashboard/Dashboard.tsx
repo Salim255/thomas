@@ -1,4 +1,4 @@
-const Dashboard = ({user}) => {
+const Dashboard = ({user: any}) => {
   return (
     <section className='section'>
       <h4>Hello, {user?.name}</h4>
