@@ -1,23 +1,15 @@
-import { BrowserRouter, Route, Routes} from "react-router-dom";
-import SharedLayout from "./shared/components/SharedLayout";
-import Home from "./features/home/Home";
-import Error from "./shared/components/error/Error";
-import Dashboard from "./features/dashboard/Dashboard";
-import About from "./features/about/About";
-import Connect from "./features/contact/Contact"
-import Gallery from "./features/gallery/Gallery";
-import SharedGalleryLayout from "./features/gallery/components/SharedGalleryLayout";
-import SingleImage from "./features/gallery/components/SingleImage";
-import ProtectedRoute from "./shared/components/ProtectedRoute";
-import Login from "./features/auth/Login";
+import { RouterProvider,} from "react-router-dom";
 
 import "./App.scss";
-import { useState } from "react";
+import AppRoutes from "./app-routes/AppRoute";
 
 function App() {
-  const [user, setUser] = useState(null);
+
   return (
-    <>
+    <RouterProvider router={AppRoutes}></RouterProvider>
+    
+    
+/*     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
@@ -45,7 +37,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </> */
   )
 }
 
