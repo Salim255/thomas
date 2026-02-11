@@ -8,9 +8,10 @@ import Gallery from "./../features/gallery/Gallery";
 import SharedGalleryLayout from "./../features/gallery/components/SharedGalleryLayout";
 import SingleImage from "./../features/gallery/components/SingleImage";
 import Login from "./../features/auth/Login";
+import type { RouteObject } from "react-router-dom";
 
 
-export const routes = [
+export const routes: RouteObject[] = [
   {
     path: "/",
     Component: SharedLayout,

@@ -1,6 +1,6 @@
 .header{
-  background: linear-gradient(to  bottom,$color-primary 10%, $color-secondary 100%);
- position: fixed;
+  background: linear-gradient(to  bottom, var(--color-primary) 10%, var(--color-secondary) 100%);
+  position: fixed;
   z-index: 1;
   transition: all .2s;
   height: 0;
@@ -17,17 +17,17 @@
    // position: relative;
     //background-color: rgba($color: $color-primary, $alpha: 1);
    //background-color: currentColor;
-    background: linear-gradient(to  bottom,$color-primary 80%, $color-secondary 100%);
+    background: linear-gradient(to  bottom, var(--color-primary) 80%, var(--color-secondary) 100%);
     
     .nav{
-      color: rgba($color:  $color-secondary, $alpha: 1);
+      color: rgba($color:  var(--color-secondary), $alpha: 1);
       &__link:link,
       &__link:visited{
-        color:rgba($color:  $color-secondary, $alpha: .3) ; 
+        color:rgba($color:  var(--color-secondary), $alpha: .3) ; 
       }
       &__link:hover,
       &__link:active{
-        background-color:rgba($color:  $color-grey-light-2, $alpha: .09);
+        background-color:rgba($color:  var(--color-grey-light-2), $alpha: .09);
       }
      }
     
@@ -54,7 +54,7 @@
       text-transform: uppercase;
       text-align: center;
       display: block;
-      color:rgba($color:  $color-secondary, $alpha: .3) ;
+      color:rgba($color:  var(--color-secondary), $alpha: .3) ;
       padding: 1.2rem;
       transition: all .2s;
       justify-self: center;

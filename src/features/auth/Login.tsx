@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, type SyntheticEvent} from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -6,8 +6,8 @@ const Login = () => {
     const [email, setEmail] = useState('');
 
     const navigate = useNavigate(); 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    const handleSubmit = async (event: SyntheticEvent) => {
+        event.preventDefault();
         if(!name || !email) return ;
       
         //setUser({name: name, email: email});

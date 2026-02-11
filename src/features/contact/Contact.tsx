@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, type SyntheticEvent } from "react";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     console.log("click");
   };
@@ -43,13 +43,12 @@ const Contact = () => {
 
         <div className="form__group form__group--3">
           <textarea
-            type="text"
             className="form__input form__textArea"
             value={message}
             name="message"
             placeholder="Say something"
             onChange={(e) => setMessage(e.target.value)}
-            rows="15"
+            rows={15}
           />
           <label className="form__label">Message</label>
         </div>

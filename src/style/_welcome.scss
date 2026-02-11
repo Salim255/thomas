@@ -3,7 +3,7 @@
     text-align: center;
     
     text-transform: uppercase;
-    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, .5)), url(../img/hero1.jpg);
+    background-image: linear-gradient(rgba(var(--color-primary), 0.5), rgba(var(--color-primary), .5)), url(../img/hero1.jpg);
     background-position: center;
     background-size: cover;
     transition: all .2s ease-in-out;
